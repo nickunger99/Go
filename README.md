@@ -1,3 +1,6 @@
+# Curso:
+https://www.youtube.com/@AprendaGo
+
 # Go: Aprenda a Programar com a Linguagem do Google
 
 01 - Visão Geral do Curso
