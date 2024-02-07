@@ -4,8 +4,7 @@ import "Go/2.Alura/2.Go_OOP/banco/clientes"
 
 type ContaCorrente struct {
 	Titular       clientes.Titular
-	NumeroAgencia int
-	NumeroConta   int
+	NumeroAgencia, NumeroConta int
 	saldo         float64
 }
 
