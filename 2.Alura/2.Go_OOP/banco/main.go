@@ -6,14 +6,28 @@ import (
 )
 
 func main() {
-	contaDaSilvia := contas.ContaCorrente{Titular: "Silvia", Saldo: 300}
-	contaDoGustavo := contas.ContaCorrente{Titular: "Gustavo", Saldo: 100}
 
-	status := contaDaSilvia.Transferir(200, &contaDoGustavo)
+	contaExemplo := contas.ContaCorrente{}
+	contaExemplo.Depositar(100)
 
-	fmt.Println(status)
-	fmt.Println(contaDaSilvia)
-	fmt.Println(contaDoGustavo)
+	fmt.Println(contaExemplo.ObterSaldo())
+
+	// clienteBruno := clientes.Titular{
+	// 	Nome:      "Bruno",
+	// 	CPF:       "123.111.123.12",
+	// 	Profissao: "Desenvolvedor"}
+	// contaDoBruno := contas.ContaCorrente{Titular: clienteBruno, NumeroAgencia: 123, NumeroConta: 123456, Saldo: 100}
+
+	// fmt.Println(contaDoBruno)
+
+	// contaDaSilvia := contas.ContaCorrente{Titular: "Silvia", Saldo: 300}
+	// contaDoGustavo := contas.ContaCorrente{Titular: "Gustavo", Saldo: 100}
+
+	// status := contaDaSilvia.Transferir(200, &contaDoGustavo)
+
+	// fmt.Println(status)
+	// fmt.Println(contaDaSilvia)
+	// fmt.Println(contaDoGustavo)
 
 	// contaDaSilvia := ContaCorrente{}
 	// contaDaSilvia.titular = "Silvia"
